@@ -12,8 +12,8 @@ body{
 }
 
 .nav{
-    background-color: #333;
-    color: white;
+    background-color: #1F2937;
+    color: rgba(255, 255, 255, 0.752);
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -41,10 +41,6 @@ body{
     padding: .25rem;
 }
 
-.nav li.active{
-    background-color: #555;
-}
-
 .nav li:hover{
-    background-color: #777;
+    border-bottom: 2px solid white;
 }
