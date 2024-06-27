@@ -21,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/First-react-project" element={<Home />} />
           <Route path="/Learning" element={<Learning />} />
           <Route path="/Ongoing" element={<Ongoing />} />
           <Route path="/signin" element={<Signin />} />

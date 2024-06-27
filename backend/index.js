@@ -14,24 +14,5 @@ app.post('/create',async(req,resp)=>
   resp.send(result)
 })
 
-app.post('/request',async(req,resp)=>
-{
-    if(req.body.password && req.body.email)
-      {
-        let user =await User.findOne(req.body).select('-password');
-        if(user)
-          { 
-            resp.send(user)
-          }
-          else
-          {
-            resp.send({result: "no user found"})
-          }
-      }
-      else
-      {
-        resp.send({result: "no user found"})
-      }
-})
 
 app.listen(5000);
