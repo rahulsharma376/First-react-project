@@ -1,0 +1,48 @@
+#service{
+    background-color: #1F2937;
+    padding: 60px 6% 80px;
+    text-align: center;
+}
+
+#service .services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 60px;
+    text-align: left;
+}
+
+.services div{
+    background-color: rgb(62, 26, 96);
+    padding: 40px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.services div i{
+    font-size: 50px;
+    margin-bottom:  30px;
+}
+
+
+.services div h2{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+.services div:hover{
+    background-color: rgb(63, 82, 144);
+    color: rgb(17, 2, 32);
+    transform: scale(1.05);
+}
+
+
+.sub-title{
+    font-size: 36px;
+}
+
+

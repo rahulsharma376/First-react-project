@@ -1,0 +1,55 @@
+.footer{
+    background-color: #1F2937;
+    color: white;
+    padding: 50px 0;
+}
+
+
+.foots{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.foots div{
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    font-size: 13px;
+    width: 350px;
+    justify-content: space-around;
+}
+
+.bor{
+    border-right: 1px solid #6E6E6E;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.bor h2{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.bor p a{
+    line-height: 3;
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
+.foot p a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.foot p a:hover{
+    text-decoration: none;
+    color: blueviolet;
+}
+.reserved, .foots{
+    text-align: center;
+    font-size: 14px;
+    border-top: #6E6E6E solid 1px;
+    padding-top: 20px;
+    color:#6E6E6E;
+}

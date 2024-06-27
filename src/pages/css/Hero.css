@@ -1,0 +1,66 @@
+*{
+    color: #ffffff;
+}
+.hero_sec{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.hero_txt{
+    width: 45%;
+}
+.line1{
+    border: 1px solid #a59595;
+    width: 500px;
+}
+
+.hero_txt h1{
+    font-size: 90px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -3px;
+    margin-top: 45px;
+}
+.hero_txt h2{
+       font-size: 70px;
+    font-weight: 800;
+    margin-top: -20px;
+}
+.hero_txt p{
+    letter-spacing: 0.2px;
+    font-size: 18;
+    line-height: 1.5;
+}
+
+button{
+    border: #EC4899 solid 2px ;
+    height: 45px;
+    margin: 30px 0;
+    border-radius: 10px;
+    width: 100px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.hero_txt a{
+    text-decoration: none;
+}
+
+#btn:hover
+{
+    background-color: #eae9f0;
+    border-color: #cfd0d7;
+    color: blueviolet;
+}
+
+.hero_img{
+    width: 40%;
+    position: relative;
+    
+}
+.hero_img img{
+    width: 400px;
+}

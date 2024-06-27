@@ -1,32 +1,45 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
 import Home from './pages/Home';
-import About from './pages/About';
-import Pricing from './pages/Pricing';
+import Signin from './pages/Signin';
 import { Route, Routes } from "react-router-dom"
+import Learning from './pages/Learning';
+import Ongoing from './pages/Ongoing';
+import Footer from './Footer';
+import ScrollButton from './components/ScrollButton';
+import React, { useState } from 'react';
+
 
 
 function App() {
-  let Component
-  switch (window.location.pathname) {
-    case "/":
-      Component = <Home />
-      break
-    case  "/pricing":
-      Component = <Pricing />
-      break
-    case "/about":
-      Component = <About />
-      break
-  }
   return ( 
-    <>
+    <div className='container1'>
       <Navbar />
+      
       <div className="container">
-        {Component} 
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/First-react-project" element={<Home />} />
+          <Route path="/Learning" element={<Learning />} />
+          <Route path="/Ongoing" element={<Ongoing />} />
+          <Route path="/signin" element={<Signin />} />
+        </Routes>
       </div>
-    </>
+
+      <div style={{ height: '100vh', overflowY: 'auto', position: 'relative' }}>
+      <div>
+        {/* {messages.map((message, index) => (
+          <div key={index}>{message}</div>
+        ))} */}
+        {/* <button onClick={addMessage}>Add Message</button> */}
+      </div>
+      
+    </div>
+      <Footer/>
+      <ScrollButton />
+    </div>
   )
 }
 
